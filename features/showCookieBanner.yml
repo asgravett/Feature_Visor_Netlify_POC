@@ -13,11 +13,6 @@ environments:
 
   production:
     rules:
-      - key: "1"
-        segments:
-          - netherlands # enabled in prod for NL only
+      - key: "0"
+        segments: "*" # enabled for everyone in staging only
         percentage: 100
-
-      - key: "2"
-        segments: "*" # everyone else
-        percentage: 0
